@@ -6,15 +6,14 @@
 package LinkedList_A1;
 
 public class LinkedListImpl implements LIST_Interface {
-  Node sentinel; //this will be the entry point to your linked list (the head)
+  Node sentinel;
   	
-  public LinkedListImpl(){//this constructor is needed for testing purposes. Please don't modify!
-    sentinel=new Node(0); //Note that the root's data is not a true part of your data set!
+  public LinkedListImpl() {
+    sentinel=new Node(0);
   }
   
-  //implement all methods in interface, and include the getRoot method we made for testing purposes. Feel free to implement private helper methods!
   
-  public Node getRoot(){ //leave this method as is, used by the grader to grab your linkedList easily.
+  public Node getRoot(){
     return sentinel;
   }
 
